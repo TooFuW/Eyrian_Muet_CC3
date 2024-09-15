@@ -1,0 +1,23 @@
+{
+  "name": "devweb-tp5",
+  "version": "1.0.0",
+  "description": "Tutoriel HTTP/Express Node.js",
+  "main": "server-http.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TooFuW/devweb-tp5.git"
+  },
+  "author": "Eyrian Muet <eyrianmuet@proton.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TooFuW/devweb-tp5/issues"
+  },
+  "homepage": "https://github.com/TooFuW/devweb-tp5#readme",
+  "dependencies": {
+    "devweb-tp5": "file:"
+  }
+}
