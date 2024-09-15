@@ -11,7 +11,10 @@ function requestListener(_request, response) {
         response.writeHead(200);
         return response.end(contents);
     })
-    .catch((error) => console.error(error));
+    .catch((error) => {
+        response.writeHead(500);
+        return response.end("index.html not found");
+    });
 }
 
 const server = http.createServer(requestListener);
