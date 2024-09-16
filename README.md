@@ -60,3 +60,7 @@ async function requestListener(_request, response) {
 ## Question 1.6:
 
 Ces commandes ont installé les modules cross-env et nodemon dans le package.
+
+## Question 1.7:
+
+Le mode développement fait redémarrer le serveur automatiquement à chaque changement alors que le mode production ne redémarre pas le serveur tout seul.
