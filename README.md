@@ -24,3 +24,21 @@ Error: ENOENT: no such file or directory, open 'C:\Users\Utilisateur\Documents\d
   path: 'C:\\Users\\Utilisateur\\Documents\\devweb-tp5\\index.html'
 }
 Le problème vient du fait qu'on n'a pas de fichier index.html
+## Question 1.5:
+Voici le code requestListener() avec gestion d'erreur en async/await :
+````javascript
+```
+async function requestListener(_request, response) {
+    try {
+        const contents = await fs.readFile("index.html", "utf8")
+        response.setHeader("Content-Type", "text/html");
+        response.writeHead(200);
+        return response.end(contents);
+    }
+    catch (error) {
+        response.writeHead(500);
+        return response.end("index.html not found");
+    }
+}
+```
+````
