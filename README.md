@@ -56,3 +56,7 @@ async function requestListener(_request, response) {
     }
 }
 ```
+
+## Question 1.6:
+
+Ces commandes ont installé les modules cross-env et nodemon dans le package.
