@@ -105,3 +105,8 @@ L'événement listening se déclenche à chaque fois que le serveur (server-expr
 ### Question 2.5:
 
 C'est l'option index qui s'occupe de cette redirection.
+
+### Question 2.6:
+
+Avec le rafraîchissement simple on reçoit le code 304 pour nous dire que le fichier n'a pas été modifié et avec un rafraîchissement forcé on reçoiit le code 200 car on ignore le cache et on retélécharge.
+
