@@ -69,10 +69,10 @@ Le mode développement fait redémarrer le serveur automatiquement à chaque cha
 
 ### Question 1.8:
 
-- http://localhost:8000/index.html renvoie un code 200 et affiche Hello World
-- http://localhost:8000/random.html renvoie un code 200 et affiche un nombre compris entre 0 et 99
-- http://localhost:8000/ renvoie un code 404 et affiche 404 : NOT FOUND
-- http://localhost:8000/dont-exist renvoie un code 404 et affiche 404 : NOT FOUND
+- http://localhost:8000/index.html renvoie un code 200 et affiche Hello World.
+- http://localhost:8000/random.html renvoie un code 200 et affiche un nombre compris entre 0 et 99.
+- http://localhost:8000/ renvoie un code 404 et affiche 404 : NOT FOUND.
+- http://localhost:8000/dont-exist renvoie un code 404 et affiche 404 : NOT FOUND.
 
 ## Partie 2:
 
@@ -85,7 +85,7 @@ Le mode développement fait redémarrer le serveur automatiquement à chaque cha
 
 ### Question 2.2:
 
-- Les 3 pages (http://localhost:8000/, http://localhost:8000/index.html et http://localhost:8000/random/:nb) renvoie bien un code 200 et s'affichent correctement
+- Les 3 pages (http://localhost:8000/, http://localhost:8000/index.html et http://localhost:8000/random/:nb) renvoie bien un code 200 et s'affichent correctement.
 
 ### Question 2.3:
 
@@ -96,6 +96,8 @@ Accept-Ranges: bytes
 Cache-Control: public, max-age=0
 Last-Modified: Wed, 25 Sep 2024 03:01:50 GMT
 ETag: W/"10b-1922720c06c"
-Content-Type: text/html; charset=UTF-8
-Content-Length: 267
 ```
+
+### Question 2.4:
+
+L'événement listening se déclenche à chaque fois que le serveur (server-express.mjs) est modifié.
