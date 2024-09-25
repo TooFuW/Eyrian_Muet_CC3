@@ -83,3 +83,6 @@ Le mode développement fait redémarrer le serveur automatiquement à chaque cha
 - https://www.npmjs.com/package/loglevel
 - https://www.npmjs.com/package/morgan
 
+### Question 2.2:
+
+- Les 3 pages (http://localhost:8000/, http://localhost:8000/index.html et http://localhost:8000/random/:nb) renvoie bien un code 200 et s'affichent correctement
