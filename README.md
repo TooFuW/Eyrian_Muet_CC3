@@ -18,9 +18,9 @@ Transfer-Encoding: chunked
 Les en-têtes qui ont changé depuis la version précédente sont :
 ```
 Content-Type: application/json
-Date: Sun, 15 Sep 2024 22:18:08 GMT
 Content-Length: 20
 ```
+La date a également changé mais c'est normal je ne compte pas cet en-tête là
 
 ### Question 1.3:
 
@@ -86,3 +86,16 @@ Le mode développement fait redémarrer le serveur automatiquement à chaque cha
 ### Question 2.2:
 
 - Les 3 pages (http://localhost:8000/, http://localhost:8000/index.html et http://localhost:8000/random/:nb) renvoie bien un code 200 et s'affichent correctement
+
+### Question 2.3:
+
+Voici toutes les nouvelles en-têtes par rapport au serveur HTTP :
+```
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 25 Sep 2024 03:01:50 GMT
+ETag: W/"10b-1922720c06c"
+Content-Type: text/html; charset=UTF-8
+Content-Length: 267
+```
