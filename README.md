@@ -64,3 +64,10 @@ Ces commandes ont installé les modules cross-env et nodemon dans le package.
 ## Question 1.7:
 
 Le mode développement fait redémarrer le serveur automatiquement à chaque changement alors que le mode production ne redémarre pas le serveur tout seul.
+
+## Question 1.8:
+
+- http://localhost:8000/index.html renvoie un code 200 et affiche Hello World
+- http://localhost:8000/random.html renvoie un code 200 et affiche un nombre compris entre 0 et 99
+- http://localhost:8000/ renvoie un code 404 et affiche 404 : NOT FOUND
+- http://localhost:8000/dont-exist renvoie un code 404 et affiche 404 : NOT FOUND
