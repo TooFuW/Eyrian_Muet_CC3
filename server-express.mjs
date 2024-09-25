@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import createError from "http-errors";
 
 const host = "localhost";
 const port = 8000;
@@ -13,7 +14,11 @@ app.set("view engine", "ejs");
 app.use(express.static("static"));
 
 app.get("/random/:nb", async function (request, response, next) {
-    const length = request.params.nb;
+    const length = Number.parseInt(request.params.nb, 10);
+    if (Number.isNaN(length)) {
+        return next(createError(400));
+    }
+    console.log(Number.isNaN(length))
     const numbers = Array.from({ length })
         .map((_) => Math.floor(100 * Math.random()));
     const welcome = "Bienvenue sur la page qui vous montre des nombres aléatoires !";
