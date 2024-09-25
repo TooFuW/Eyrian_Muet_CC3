@@ -1,9 +1,11 @@
 import express from "express";
 import morgan from "morgan";
 import createError from "http-errors";
+import logger from "loglevel";
 
 const host = "localhost";
 const port = 8000;
+logger.setLevel(logger.levels.DEBUG);
 
 const app = express();
 
@@ -18,7 +20,6 @@ app.get("/random/:nb", async function (request, response, next) {
     if (Number.isNaN(length)) {
         return next(createError(400));
     }
-    console.log(Number.isNaN(length))
     const numbers = Array.from({ length })
         .map((_) => Math.floor(100 * Math.random()));
     const welcome = "Bienvenue sur la page qui vous montre des nombres aléatoires !";
@@ -41,9 +42,9 @@ app.use((error, _request, response, _next) => {
 const server = app.listen(port, host);
 
 server.on("listening", () =>
-    console.info(
+    logger.info(
         `HTTP listening on http://${server.address().address}:${server.address().port} with mode '${process.env.NODE_ENV}'`,
     ),
 );
 
-console.info(`File ${import.meta.url} executed.`);
+logger.info(`File ${import.meta.url} executed.`);
