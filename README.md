@@ -101,3 +101,7 @@ ETag: W/"10b-1922720c06c"
 ### Question 2.4:
 
 L'événement listening se déclenche à chaque fois que le serveur (server-express.mjs) est modifié.
+
+### Question 2.5:
+
+C'est l'option index qui s'occupe de cette redirection.
