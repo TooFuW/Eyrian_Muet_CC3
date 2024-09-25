@@ -110,3 +110,6 @@ C'est l'option index qui s'occupe de cette redirection.
 
 Avec le rafraîchissement simple on reçoit le code 304 pour nous dire que le fichier n'a pas été modifié et avec un rafraîchissement forcé on reçoit le code 200 car on ignore le cache et on retélécharge.
 
+### Question 2.7:
+
+En mode développement on a toujours l'erreur entière mais en mode production on a un message "Internal Server Error".
