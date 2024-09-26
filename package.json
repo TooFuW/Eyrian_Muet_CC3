@@ -13,14 +13,14 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TooFuW/devweb-tp5.git"
+    "url": "git+https://github.com/TooFuW/MUET_Eyrian_CC3.git"
   },
   "author": "Eyrian Muet <eyrianmuet@proton.me>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TooFuW/devweb-tp5/issues"
+    "url": "https://github.com/TooFuW/MUET_Eyrian_CC3/issues"
   },
-  "homepage": "https://github.com/TooFuW/devweb-tp5#readme",
+  "homepage": "https://github.com/TooFuW/MUET_Eyrian_CC3#readme",
   "dependencies": {
     "cross-env": "^7.0.3",
     "devweb-tp5": "file:",
